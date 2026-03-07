@@ -10,9 +10,8 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+await mongoose.connect(process.env.MONGO_URI);
+console.log("MongoDB Connected");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
