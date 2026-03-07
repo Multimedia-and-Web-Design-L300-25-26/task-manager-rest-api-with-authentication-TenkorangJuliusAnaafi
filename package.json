@@ -5,8 +5,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-  "start": "node src/index.js",
-  "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
+    "start": "node src/index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
   },
   "keywords": [],
   "author": "",
